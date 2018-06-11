@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TherapyBoxDemo.Pages.HomePage" BackgroundImage="Background.png">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand" >
+            <Grid VerticalOptions="FillAndExpand" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>   
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="120"/>
+                    <RowDefinition Height="Auto"/>     
+                </Grid.RowDefinitions> 
+                <StackLayout HorizontalOptions="CenterAndExpand" Grid.Row="0" Margin="0,0,0,30" Grid.Column="0" Grid.ColumnSpan="2" VerticalOptions="StartAndExpand">
+                <Label Text="Hackathon" FontSize="45" TextColor="White"/>
+                    </StackLayout>
+                    <Entry Placeholder="Username" Text="{Binding Username}" PlaceholderColor="White" Grid.Row="1" Grid.Column="0" VerticalOptions="EndAndExpand" HorizontalOptions="End"/>
+                    <Entry Placeholder="Password" Text="{Binding Password}" PlaceholderColor="White" Grid.Row="1" Grid.Column="1" VerticalOptions="EndAndExpand" HorizontalOptions="Start"/>
+                    <Image Source="Login_button.png" HeightRequest="200" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" VerticalOptions="EndAndExpand" Margin="0,50,0,40">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding LoginCommand}"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Label Text="New To the Hackathon?" HorizontalOptions="End" TextColor="White" Grid.Row="3" Grid.Column="0" VerticalOptions="EndAndExpand"/>
+                    <Label Text="Sign Up" TextColor="Yellow" HorizontalOptions="Start" Grid.Row="3" Grid.Column="1" VerticalOptions="EndAndExpand">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding RegisterCommand}"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TherapyBoxDemo.Pages.PicturesPage" BackgroundImage="Background.png" xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView" xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Label Text="Pictures" FontSize="34" HorizontalOptions="CenterAndExpand"/>
+            <StackLayout>
+                <Frame BorderColor="Yellow" WidthRequest="200" HeightRequest="200" HorizontalOptions="CenterAndExpand">
+
+                    <Image Source="Plus_button" WidthRequest="200" HeightRequest="200">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding AddNewImageCommand}"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+
+                </Frame>
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                <flv:FlowListView FlowColumnCount="3" x:Name="listItems" 
+						SeparatorVisibility="None"
+						HasUnevenRows="false" RowHeight="200" >
+                    <flv:FlowListView.FlowColumnTemplate>
+                        <DataTemplate >
+                            <Frame BorderColor="Yellow" WidthRequest="200" HeightRequest="200" HorizontalOptions="CenterAndExpand">
+                            <ffimageloading:CachedImage  DownsampleToViewSize="true" AbsoluteLayout.LayoutFlags="All" HeightRequest="200" AbsoluteLayout.LayoutBounds="0,0,1,1" Source="{Binding .}"  Aspect="AspectFill" HorizontalOptions="FillAndExpand">
+                            </ffimageloading:CachedImage>
+                                </Frame>
+                        </DataTemplate>
+                    </flv:FlowListView.FlowColumnTemplate>
+                </flv:FlowListView>
+                <!--<ListView>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame BorderColor="Yellow" WidthRequest="200" HeightRequest="200" HorizontalOptions="CenterAndExpand">
+                                <Image HeightRequest="200" WidthRequest="200"/>
+                            </Frame>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>-->
+            </StackLayout>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

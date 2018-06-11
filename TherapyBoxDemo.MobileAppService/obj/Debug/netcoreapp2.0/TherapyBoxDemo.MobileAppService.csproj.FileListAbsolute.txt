@@ -1,0 +1,10 @@
+D:\Projects\TherapyBoxDemo-master\TherapyBoxDemo.MobileAppService\bin\Debug\netcoreapp2.0\TherapyBoxDemo.MobileAppService.deps.json
+D:\Projects\TherapyBoxDemo-master\TherapyBoxDemo.MobileAppService\bin\Debug\netcoreapp2.0\TherapyBoxDemo.MobileAppService.runtimeconfig.json
+D:\Projects\TherapyBoxDemo-master\TherapyBoxDemo.MobileAppService\bin\Debug\netcoreapp2.0\TherapyBoxDemo.MobileAppService.runtimeconfig.dev.json
+D:\Projects\TherapyBoxDemo-master\TherapyBoxDemo.MobileAppService\bin\Debug\netcoreapp2.0\TherapyBoxDemo.MobileAppService.dll
+D:\Projects\TherapyBoxDemo-master\TherapyBoxDemo.MobileAppService\bin\Debug\netcoreapp2.0\TherapyBoxDemo.MobileAppService.pdb
+D:\Projects\TherapyBoxDemo-master\TherapyBoxDemo.MobileAppService\obj\Debug\netcoreapp2.0\TherapyBoxDemo.MobileAppService.csproj.CoreCompileInputs.cache
+D:\Projects\TherapyBoxDemo-master\TherapyBoxDemo.MobileAppService\obj\Debug\netcoreapp2.0\TherapyBoxDemo.MobileAppService.AssemblyInfoInputs.cache
+D:\Projects\TherapyBoxDemo-master\TherapyBoxDemo.MobileAppService\obj\Debug\netcoreapp2.0\TherapyBoxDemo.MobileAppService.AssemblyInfo.cs
+D:\Projects\TherapyBoxDemo-master\TherapyBoxDemo.MobileAppService\obj\Debug\netcoreapp2.0\TherapyBoxDemo.MobileAppService.dll
+D:\Projects\TherapyBoxDemo-master\TherapyBoxDemo.MobileAppService\obj\Debug\netcoreapp2.0\TherapyBoxDemo.MobileAppService.pdb

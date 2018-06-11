@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TherapyBoxDemo.Pages.TaskPage" BackgroundImage="Background.png">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="CenterAndExpand" Margin="10,0,10,0 ">
+            <Label Text="Tasks" FontSize="32" TextColor="White" HorizontalOptions="CenterAndExpand"/>
+             <StackLayout HorizontalOptions="CenterAndExpand">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+            <ListView Grid.Row="0" ItemsSource="{Binding TaskList}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                        <Entry WidthRequest="200" HorizontalOptions="StartAndExpand" Text="{Binding TaskName}" TextColor="White"/>
+                        <Switch HorizontalOptions="EndAndExpand"  IsToggled="{Binding TaskToggle}"/>
+                       </StackLayout>
+                       </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+                    </Grid>
+                <Button Text="Add new Task" Command="{Binding AddNewTaskCommand}"/>
+                <Button Text="Save Tasks" Command="{Binding SaveTasksCommand}"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

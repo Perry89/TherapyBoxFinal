@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TherapyBoxDemo.Pages.NewsPage" BackgroundImage="Background.png">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="News" TextColor="White" FontSize="24" HorizontalOptions="Start"/>
+                <Frame BorderColor="Yellow" WidthRequest="200" HeightRequest="50" HorizontalOptions="CenterAndExpand">
+                    <Image Source="{Binding ImageSource}"/>
+                </Frame>
+            </StackLayout>
+            <ScrollView>
+                <StackLayout>
+            <Label TextColor="White" Text="{Binding Title}" FontSize="36" HorizontalOptions="CenterAndExpand"/>
+            <Label TextColor="White" Text="{Binding Description}"/>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
